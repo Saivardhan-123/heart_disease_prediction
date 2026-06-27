@@ -23,12 +23,14 @@ def predict():
     if output == 0:
         return render_template(
             'output.html',
-            prediction="You are safe buddy ❤️"
+            prediction="You are safe buddy ❤️",
+            play_audio=False
         )
 
     return render_template(
         'output.html',
-        prediction="This is the end 🫠"
+        prediction="This is the end 🫠",
+        play_audio=True
     )
 import os
 
